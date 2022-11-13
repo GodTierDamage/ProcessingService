@@ -1,12 +1,16 @@
+package moduls;
+
+import enums.StudyProfile;
+
 public class University {
 
-    private final int id;
+    private final String id;
     private String fullName;
     private String shortName;
-    private int yearOfFoundation;
-    private StudyProfile mainStudyProfile;
+    private final int yearOfFoundation;
+    private final StudyProfile mainStudyProfile;
 
-    public University(int id, String fullName, String shortName, int yearOfFoundation, StudyProfile mainStudyProfile) {
+    public University(String id, String fullName, String shortName, int yearOfFoundation, StudyProfile mainStudyProfile) {
         this.id = id;
         this.fullName = fullName;
         this.shortName = shortName;
@@ -19,13 +23,13 @@ public class University {
         return String.format("""
                 University name: %s
                 University short name: %s
-                University id: %d
-                Main profile: %s
+                University id: %s
                 Year of foundation: %d
-                """, fullName, shortName, id, mainStudyProfile, yearOfFoundation);
+                Study profile: %s
+                """, fullName, shortName, id, yearOfFoundation, mainStudyProfile.getProfileName());
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
