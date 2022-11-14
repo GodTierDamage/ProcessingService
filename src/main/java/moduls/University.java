@@ -1,13 +1,24 @@
 package moduls;
 
+import com.google.gson.annotations.SerializedName;
 import enums.StudyProfile;
+
+import java.util.Objects;
 
 public class University {
 
     private final String id;
+
+    @SerializedName("Полное название")
     private String fullName;
+
+    @SerializedName("Аббревиатура названия")
     private String shortName;
+
+    @SerializedName("Год основания")
     private final int yearOfFoundation;
+
+    @SerializedName("Основной учебный профиль")
     private final StudyProfile mainStudyProfile;
 
     public University(String id, String fullName, String shortName, int yearOfFoundation, StudyProfile mainStudyProfile) {
@@ -26,7 +37,7 @@ public class University {
                 University id: %s
                 Year of foundation: %d
                 Study profile: %s
-                """, fullName, shortName, id, yearOfFoundation, mainStudyProfile.getProfileName());
+                """, fullName, shortName, id, yearOfFoundation, mainStudyProfile);
     }
 
     public String getId() {
@@ -55,5 +66,18 @@ public class University {
 
     public void setShortName(String shortName) {
         this.shortName = shortName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof University)) return false;
+        University that = (University) o;
+        return yearOfFoundation == that.yearOfFoundation && Objects.equals(id, that.id) && Objects.equals(fullName, that.fullName) && Objects.equals(shortName, that.shortName) && mainStudyProfile == that.mainStudyProfile;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, fullName, shortName, yearOfFoundation, mainStudyProfile);
     }
 }
