@@ -1,4 +1,4 @@
-package Utils;
+package utils;
 
 import enums.StudyProfile;
 import moduls.Student;

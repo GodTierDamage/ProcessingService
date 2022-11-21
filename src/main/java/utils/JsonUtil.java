@@ -1,4 +1,4 @@
-package Utils;
+package utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -12,12 +12,10 @@ import java.util.List;
 
 public class JsonUtil {
 
-    private static final GsonBuilder builder;
     private static final Gson gson;
 
     static {
-        builder = new GsonBuilder();
-        gson = builder.setPrettyPrinting().create();
+        gson = new GsonBuilder().setPrettyPrinting().create();
     }
 
     private JsonUtil() {}
