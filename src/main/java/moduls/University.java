@@ -3,23 +3,33 @@ package moduls;
 import com.google.gson.annotations.SerializedName;
 import enums.StudyProfile;
 
+import javax.xml.bind.annotation.*;
 import java.util.Objects;
 
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement(name = "universityEntry")
 public class University {
 
-    private final String id;
+    @XmlElement(name = "universityId")
+    private String id;
 
+    @XmlElement(name = "universityName")
     @SerializedName("Полное название")
     private String fullName;
 
     @SerializedName("Аббревиатура названия")
+    @XmlTransient
     private String shortName;
 
     @SerializedName("Год основания")
-    private final int yearOfFoundation;
+    @XmlTransient
+    private int yearOfFoundation;
 
+    @XmlElement(name = "universityProfile")
     @SerializedName("Основной учебный профиль")
-    private final StudyProfile mainStudyProfile;
+    private StudyProfile mainStudyProfile;
+
+    public University() {}
 
     public University(String id, String fullName, String shortName, int yearOfFoundation, StudyProfile mainStudyProfile) {
         this.id = id;

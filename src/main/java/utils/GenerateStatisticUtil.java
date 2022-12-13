@@ -10,13 +10,17 @@ import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.OptionalDouble;
+import java.util.logging.Logger;
 
 public class GenerateStatisticUtil {
+
+    private static final Logger logger = Logger.getLogger(GenerateStatisticUtil.class.getName());
 
     private GenerateStatisticUtil() {
     }
 
     public static List<Statistic> createListWithStatistic(List<Student> students, List<University> universities) {
+        logger.info("starting method createListWithStatistic");
         List<Student> studentListForSearching = new ArrayList<>(students);
         List<Statistic> statistics = new ArrayList<>();
         StudyProfile[] studyProfiles = StudyProfile.values();

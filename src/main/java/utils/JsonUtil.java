@@ -9,8 +9,11 @@ import moduls.University;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class JsonUtil {
+
+    private static final Logger logger = Logger.getLogger(JsonUtil.class.getName());
 
     private static final Gson gson;
 
@@ -19,6 +22,10 @@ public class JsonUtil {
     }
 
     private JsonUtil() {}
+
+    public static String listToJson(List<?> list) {
+        return gson.toJson(list);
+    }
 
     public static String studentToJson(Student student) {
         return gson.toJson(student);
@@ -36,20 +43,14 @@ public class JsonUtil {
         return gson.fromJson(university, University.class);
     }
 
-    public static String studentsToJson(List<Student> students) {
-        return gson.toJson(students);
-    }
-
     public static List<Student> jsonToStudentsList(String jsonStudents){
+        logger.info("Converting json to list with students");
         Type typeOfReturningList = TypeToken.getParameterized(ArrayList.class, Student.class).getType();
         return gson.fromJson(jsonStudents, typeOfReturningList);
     }
 
-    public static String universitiesToJson(List<University> universities){
-        return gson.toJson(universities);
-    }
-
     public static List<University> jsonToUniversitiesList(String universities){
+        logger.info("Converting json to list with universities");
         Type typeOfReturningList = TypeToken.getParameterized(ArrayList.class, University.class).getType();
         return gson.fromJson(universities, typeOfReturningList);
     }

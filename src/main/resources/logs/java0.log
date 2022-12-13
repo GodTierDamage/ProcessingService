@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="windows-1251" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-12-13T11:40:25.658945200Z</date>
+  <millis>1670931625658</millis>
+  <nanos>945200</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting program</message>
+</record>
+<record>
+  <date>2022-12-13T11:40:26.052313100Z</date>
+  <millis>1670931626052</millis>
+  <nanos>313100</nanos>
+  <sequence>1</sequence>
+  <logger>services.XSSFFileReader</logger>
+  <level>INFO</level>
+  <class>services.XSSFFileReader</class>
+  <method>getStudentsFromFile</method>
+  <thread>1</thread>
+  <message>Starting method getStudentsFromFile</message>
+</record>
+<record>
+  <date>2022-12-13T11:40:26.053313400Z</date>
+  <millis>1670931626053</millis>
+  <nanos>313400</nanos>
+  <sequence>2</sequence>
+  <logger>services.XSSFFileReader</logger>
+  <level>INFO</level>
+  <class>services.XSSFFileReader</class>
+  <method>getSheetFromXSSF</method>
+  <thread>1</thread>
+  <message>Creating sheet</message>
+</record>
+<record>
+  <date>2022-12-13T11:40:32.375315Z</date>
+  <millis>1670931632375</millis>
+  <nanos>315000</nanos>
+  <sequence>3</sequence>
+  <logger>services.XSSFFileReader</logger>
+  <level>INFO</level>
+  <class>services.XSSFFileReader</class>
+  <method>getSheetFromXSSF</method>
+  <thread>1</thread>
+  <message>Reading xls file</message>
+</record>
+<record>
+  <date>2022-12-13T11:40:32.541758Z</date>
+  <millis>1670931632541</millis>
+  <nanos>758000</nanos>
+  <sequence>4</sequence>
+  <logger>services.XSSFFileReader</logger>
+  <level>INFO</level>
+  <class>services.XSSFFileReader</class>
+  <method>getSheetFromXSSF</method>
+  <thread>1</thread>
+  <message>Creating sheet</message>
+</record>
+<record>
+  <date>2022-12-13T11:40:32.597798700Z</date>
+  <millis>1670931632597</millis>
+  <nanos>798700</nanos>
+  <sequence>5</sequence>
+  <logger>services.XSSFFileReader</logger>
+  <level>INFO</level>
+  <class>services.XSSFFileReader</class>
+  <method>getSheetFromXSSF</method>
+  <thread>1</thread>
+  <message>Reading xls file</message>
+</record>
+<record>
+  <date>2022-12-13T11:40:32.698429100Z</date>
+  <millis>1670931632698</millis>
+  <nanos>429100</nanos>
+  <sequence>6</sequence>
+  <logger>utils.GenerateStatisticUtil</logger>
+  <level>INFO</level>
+  <class>utils.GenerateStatisticUtil</class>
+  <method>createListWithStatistic</method>
+  <thread>1</thread>
+  <message>starting method createListWithStatistic</message>
+</record>
+<record>
+  <date>2022-12-13T11:40:32.731216700Z</date>
+  <millis>1670931632731</millis>
+  <nanos>216700</nanos>
+  <sequence>7</sequence>
+  <logger>services.XlsWriter</logger>
+  <level>INFO</level>
+  <class>services.XlsWriter</class>
+  <method>writeStatisticToFile</method>
+  <thread>1</thread>
+  <message>Starting method writeStaticToFile</message>
+</record>
+<record>
+  <date>2022-12-13T11:40:34.135624Z</date>
+  <millis>1670931634135</millis>
+  <nanos>624000</nanos>
+  <sequence>8</sequence>
+  <logger>services.XlsWriter</logger>
+  <level>INFO</level>
+  <class>services.XlsWriter</class>
+  <method>writeStatisticToFile</method>
+  <thread>1</thread>
+  <message>Writing statistic to file</message>
+</record>
+<record>
+  <date>2022-12-13T11:40:34.455480900Z</date>
+  <millis>1670931634455</millis>
+  <nanos>480900</nanos>
+  <sequence>9</sequence>
+  <logger>services.XlsWriter</logger>
+  <level>INFO</level>
+  <class>services.XlsWriter</class>
+  <method>writeStatisticToFile</method>
+  <thread>1</thread>
+  <message>Closing workbook</message>
+</record>
+<record>
+  <date>2022-12-13T11:40:34.487712300Z</date>
+  <millis>1670931634487</millis>
+  <nanos>712300</nanos>
+  <sequence>10</sequence>
+  <logger>services.XmlWriter</logger>
+  <level>INFO</level>
+  <class>services.XmlWriter</class>
+  <method>createXmlFile</method>
+  <thread>1</thread>
+  <message>Starting createXmlFile</message>
+</record>
+<record>
+  <date>2022-12-13T11:40:35.153527400Z</date>
+  <millis>1670931635153</millis>
+  <nanos>527400</nanos>
+  <sequence>11</sequence>
+  <logger>services.JsonWriter</logger>
+  <level>INFO</level>
+  <class>services.JsonWriter</class>
+  <method>createJsonFiles</method>
+  <thread>1</thread>
+  <message>Starting createJsonFiles</message>
+</record>
+<record>
+  <date>2022-12-13T11:40:35.228812100Z</date>
+  <millis>1670931635228</millis>
+  <nanos>812100</nanos>
+  <sequence>12</sequence>
+  <logger>services.JsonWriter</logger>
+  <level>INFO</level>
+  <class>services.JsonWriter</class>
+  <method>createJsonFiles</method>
+  <thread>1</thread>
+  <message>Files was written</message>
+</record>
+<record>
+  <date>2022-12-13T11:40:35.228812100Z</date>
+  <millis>1670931635228</millis>
+  <nanos>812100</nanos>
+  <sequence>13</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Ending program...</message>
+</record>
+</log>

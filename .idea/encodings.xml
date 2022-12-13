@@ -2,6 +2,14 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/jsonReqs/statistics1670911541517.json" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/jsonReqs/statistics1670912646396.json" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/jsonReqs/statistics1670915165860.json" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/jsonReqs/students1670911541328.json" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/jsonReqs/students1670912646396.json" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/jsonReqs/universities1670911541427.json" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/jsonReqs/universities1670911842563.json" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/jsonReqs/universities1670912646396.json" charset="windows-1251" />
     <file url="PROJECT" charset="windows-1251" />
   </component>
 </project>

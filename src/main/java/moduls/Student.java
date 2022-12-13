@@ -2,25 +2,38 @@ package moduls;
 
 import com.google.gson.annotations.SerializedName;
 
+import javax.xml.bind.annotation.*;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicLong;
 
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement(name = "studentEntry")
 public class Student {
 
     private static final AtomicLong idIncrement = new AtomicLong();
+
+    @XmlTransient
     private final Long id;
 
+    @XmlElement(name = "studentName")
     @SerializedName("ФИО")
     private String fullName;
 
+    @XmlElement(name = "universityId")
     @SerializedName("id университета")
     private String universityId;
 
     @SerializedName("Курс")
+    @XmlTransient
     private int currentCourseNumber;
 
+    @XmlElement(name = "avgScore")
     @SerializedName("Средний экзаменационный бал")
     private float avgExamScore;
+
+    public Student() {
+        id = idIncrement.incrementAndGet();
+    }
 
     public Student (String fullName, String universityId, int currentCourseNumber, float avgExamScore) {
         this.id = idIncrement.incrementAndGet();

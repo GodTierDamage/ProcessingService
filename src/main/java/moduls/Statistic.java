@@ -2,13 +2,28 @@ package moduls;
 
 import enums.StudyProfile;
 
+import javax.xml.bind.annotation.*;
+
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement(name = "statisticsEntry")
 public class Statistic {
 
+    @XmlElement(name = "universityProfile")
     private StudyProfile studyProfile;
+
+    @XmlElement(name = "avgScore")
     private double avgExamScore;
+
+    @XmlTransient
     private long numberOfStudentsByStudyProfile;
+
+    @XmlTransient
     private long numberOfUniversitiesByStudyProfile = 0;
+
+    @XmlTransient
     private String namesOfUniversities;
+
+    public Statistic() {}
 
     public Statistic(StudyProfile studyProfile, double avgExamScore,
                      long numberOfStudentsByStudyProfile, long numberOfUniversitiesByStudyProfile, String nameOfUniversity) {

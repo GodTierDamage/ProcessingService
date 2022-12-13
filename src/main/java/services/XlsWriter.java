@@ -9,10 +9,15 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class XlsWriter {
 
+    private static final Logger logger = Logger.getLogger(XlsWriter.class.getName());
+
     public boolean writeStatisticToFile(List<Statistic> statistics, String pathToFile) {
+        logger.info("Starting method writeStaticToFile");
         XSSFWorkbook workbook = new XSSFWorkbook();
         XSSFSheet sheet = workbook.createSheet("Статистика");
         XSSFCellStyle headingCellStyle = workbook.createCellStyle();
@@ -25,14 +30,16 @@ public class XlsWriter {
         createBaseStyle(baseCellStyle, baseFont);
         fillSheet(sheet, baseCellStyle, statistics);
         try {
+            logger.info("Writing statistic to file");
             workbook.write(new FileOutputStream(pathToFile));
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, e.getMessage(), e);
         } finally {
             try {
+                logger.info("Closing workbook");
                 workbook.close();
             } catch (IOException e) {
-                e.printStackTrace();
+                logger.log(Level.SEVERE, e.getMessage(), e);
             }
         }
         return true;

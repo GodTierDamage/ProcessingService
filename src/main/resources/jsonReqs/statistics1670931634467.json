@@ -1,0 +1,44 @@
+[
+  {
+    "studyProfile": "Физика",
+    "avgExamScore": 4.53,
+    "numberOfStudentsByStudyProfile": 8,
+    "numberOfUniversitiesByStudyProfile": 2,
+    "namesOfUniversities": "МВУ, МПИ"
+  },
+  {
+    "studyProfile": "Информатика",
+    "avgExamScore": 0.0,
+    "numberOfStudentsByStudyProfile": 0,
+    "numberOfUniversitiesByStudyProfile": 0,
+    "namesOfUniversities": "Universities not found"
+  },
+  {
+    "studyProfile": "Математика",
+    "avgExamScore": 0.0,
+    "numberOfStudentsByStudyProfile": 0,
+    "numberOfUniversitiesByStudyProfile": 1,
+    "namesOfUniversities": "КУВ"
+  },
+  {
+    "studyProfile": "Юриспруденция",
+    "avgExamScore": 0.0,
+    "numberOfStudentsByStudyProfile": 0,
+    "numberOfUniversitiesByStudyProfile": 0,
+    "namesOfUniversities": "Universities not found"
+  },
+  {
+    "studyProfile": "Медицина",
+    "avgExamScore": 4.33,
+    "numberOfStudentsByStudyProfile": 3,
+    "numberOfUniversitiesByStudyProfile": 3,
+    "namesOfUniversities": "МГМУ, ТУМ, СМИ"
+  },
+  {
+    "studyProfile": "Лингвистика",
+    "avgExamScore": 0.0,
+    "numberOfStudentsByStudyProfile": 0,
+    "numberOfUniversitiesByStudyProfile": 1,
+    "namesOfUniversities": "ВЛПУ"
+  }
+]
